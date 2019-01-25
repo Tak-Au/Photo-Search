@@ -9,7 +9,7 @@ For the Inference part you need .NET Core3 SDK preview and .net core 3 runtime. 
 See link: https://blogs.msdn.microsoft.com/dotnet/2018/11/13/net-core-tooling-update-for-visual-studio-2017-version-15-9/
 
 ## Usage
-When you get to the main screen.  Make sure to change the path to the path of the photos.  Current it is set to "C:\ML\Photos\"
+When you get to the main screen.  Make sure to change the path to the path of the photos.  Currently, it is set to "C:\ML\Photos\"
 
 Select "All" then click on search.  This should output all the photos in the folder.  
 
