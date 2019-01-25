@@ -1,0 +1,22 @@
+﻿<Window x:Class="PhotoSearchNetCore3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PhotoSearchNetCore3"
+        mc:Ignorable="d"
+        Title="Photo Search" Height="450" Width="800">
+    <Grid>
+        <DataGrid Name="FileGrid" HorizontalAlignment="Left" Height="334" Margin="10,76,0,0" VerticalAlignment="Top" Width="272" ItemsSource="{Binding}"
+                  SelectionChanged="ImageGrid_SelectionChanged" AutoGenerateColumns="False" SelectionMode="Single" IsReadOnly="True" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding}" Header="Files"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <ComboBox Name="Keyword" HorizontalAlignment="Left" Margin="10,49,0,0" VerticalAlignment="Top" Width="192" Height="22"/>
+        <Button Name="SearchButton"  Content="Search" HorizontalAlignment="Left" Margin="207,52,0,0" VerticalAlignment="Top" Width="75" Click="SearchButton_Click"/>
+        <TextBox Name="FolderLocation"  HorizontalAlignment="Left" Height="18" Margin="10,26,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192" />
+        <Image Name="ImageViewer1" HorizontalAlignment="Left" Height="400" Margin="287,10,0,0" VerticalAlignment="Top" Width="497"/>
+        <Label Content="Folder Location:" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" Width="192"/>
+    </Grid>
+</Window>
