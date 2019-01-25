@@ -1,2 +1,3 @@
 # Photo-Search
-Search Photo based in content of the photo using ONNX model and ML.Net
+This is an example project is to show how to use to build a Keras model, export the model to ONNX format, and be used to make prediction by ML.net.
+
