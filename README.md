@@ -1,6 +1,8 @@
 # Photo-Search
 This is an example project is to show how to build a Keras model, export the model to ONNX format, and be used to make prediction by ML.net.
 
+![alt text](https://raw.githubusercontent.com/Tak-Au/Photo-Search/user interface.jpg)
+
 ## Requirements
 For the Modeling part you need Keras.  To export the model from Keras to ONNX, you need WinMLTools.
 
