@@ -4,7 +4,11 @@ This is an example project is to show how to build a Keras model, export the mod
 ## Requirements
 For the Modeling part you need Keras.  To export the model from Keras to ONNX, you need WinMLTools.
 
-For the Inference part you need .NET Core3 SDK preview and .net core 3 runtime.  You need to enable VS to allow for .NET Core3 SDK preview to be used.  
+For the Inference part you need .NET Core3 SDK preview and .net core 3 runtime.  
+
+The .Net Core 3 SDK and .Net Core 3 runtime can be download via: https://dotnet.microsoft.com/download/dotnet-core/3.0
+
+You need to enable VS to allow for .NET Core3 SDK preview to be used.  
 
 See link: https://blogs.msdn.microsoft.com/dotnet/2018/11/13/net-core-tooling-update-for-visual-studio-2017-version-15-9/
 
