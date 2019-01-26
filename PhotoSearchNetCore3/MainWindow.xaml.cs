@@ -133,11 +133,12 @@ namespace PhotoSearchNetCore3
                     foreach (var prediction in predictions)
                     {
                         var predictiondic = prediction.Select((value, index) => new { value, index })
-                          .ToDictionary(pair => pair.value, pair => pair.index);
+                          .ToDictionary(pair => pair.index, pair => pair.value);
                         var resultlist = prediction.OrderByDescending(s => s).ToList();
+
                         for (int index = 0; index < 1; index++)
                         {
-                            var labelclass = predictiondic[resultlist[index]];
+                            var labelclass = predictiondic.Where(s=>s.Value== resultlist[index]).First().Key;
                             if (labelclass == Keyword.SelectedIndex)
                             {
                                 resultimage.Add(imagesFolder + imagedata[counter].Filename);
